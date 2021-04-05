@@ -1,0 +1,62 @@
+$marginBottom: 1rem;
+$borderColorGrey: rgba(59, 73, 223, 0.1);
+// colors
+// accent-brand: #3b49df;
+// --accent-brand-darker: #323ebe;
+// --accent-brand-lighter: #4150f5;
+// --accent-brand-a10: rgba(59, 73, 223, 0.10);
+
+.container {
+  // remove margin
+  margin: 1rem;
+  width: fit-content;
+  padding: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgba(59, 73, 223, 0.1);
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+.packageTitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: $marginBottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.packagePrice {
+  margin: 0;
+  font-size: 4rem;
+  margin-bottom: $marginBottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buyButton {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.buttonDiv {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 2rem;
+}
+.productDescription {
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $marginBottom;
+  padding: 0.5rem 0 0.5rem 0;
+  border-top: 1px solid $borderColorGrey;
+  border-bottom: 1px solid $borderColorGrey;
+}
