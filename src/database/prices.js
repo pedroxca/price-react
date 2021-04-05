@@ -1,4 +1,4 @@
-const monthlyPrices = {
+const monthlyPricesData = {
   basic: {
     price: 10,
     description: ['Standard package', 'Only 5GB', '1000 requests per month'],
@@ -15,22 +15,22 @@ const monthlyPrices = {
     title: 'Premium'
   },
 }
-const yearlyPrices = {
+const yearlyPricesData = {
   basic: {
     price: 110,
-    description: monthlyPrices.basic.description,
-    title: monthlyPrices.basic.title
+    description: monthlyPricesData.basic.description,
+    title: monthlyPricesData.basic.title
   },
   medium: {
     price: 270,
-    description: monthlyPrices.medium.description,
-    title: monthlyPrices.medium.title
+    description: monthlyPricesData.medium.description,
+    title: monthlyPricesData.medium.title
   },
   premium: {
     price: 486,
-    description: monthlyPrices.premium.description,
-    title: monthlyPrices.premium.title
+    description: monthlyPricesData.premium.description,
+    title: monthlyPricesData.premium.title
   },
 }
 
-export { monthlyPrices, yearlyPrices }
+export { monthlyPricesData, yearlyPricesData }

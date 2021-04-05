@@ -7,25 +7,50 @@ const CardPrice = props => {
     style: 'currency',
     currency: 'USD'
   })
+  let middle = props.middle
+  if (!middle) {
+    middle = false;
+  }
   const productDescription = props.productDescription
   const packagePrice = props.packagePrice
-  const renderProductDescription = productDescription.map(description => {
-    return (
-      <li key={packagePrice} className={styles.productDescription}>{description}</li>
-    )
-  })
+
 
 
   return (
-    <div className={styles.container}>
-      <p className={styles.packageTitle} >{props.packageTitle}</p>
-      <h1 className={styles.packagePrice}>{formatter.format(packagePrice)}</h1>
-      <ul className={styles.descriptionList}>
-        {renderProductDescription}
-      </ul>
-      <div className={styles.buttonDiv}>
-        <button className={styles.buyButton} >Learn More</button>
-      </div>
+    <div>
+      {
+        middle === true ?
+          <div className={styles.containerMiddle}>
+            <p className={styles.packageTitleMiddle} >{props.packageTitle}</p>
+            <h1 className={styles.packagePriceMiddle}>{formatter.format(packagePrice)}</h1>
+            <ul className={styles.descriptionListMiddle}>
+              {productDescription.map(description => {
+                return (
+                  <li key={packagePrice} className={styles.productDescription}>{description}</li>
+                )
+              })}
+            </ul>
+            <div className={styles.buttonDivMiddle}>
+              <button className={styles.buyButtonMiddle} >LEARN MORE</button>
+            </div>
+          </div>
+          :
+          <div className={styles.container}>
+            <p className={styles.packageTitle} >{props.packageTitle}</p>
+            <h1 className={styles.packagePrice}>{formatter.format(packagePrice)}</h1>
+            <ul className={styles.descriptionList}>
+              {productDescription.map(description => {
+                return (
+                  <li key={packagePrice} className={styles.productDescription}>{description}</li>
+                )
+              })}
+            </ul>
+            <div className={styles.buttonDiv}>
+              <button className={styles.buyButton} >LEARN MORE</button>
+            </div>
+          </div>
+      }
+
     </div>
   )
 }
