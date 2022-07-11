@@ -26,7 +26,7 @@ const CardPrice = props => {
             <ul className={styles.descriptionListMiddle}>
               {productDescription.map(description => {
                 return (
-                  <li key={packagePrice} className={styles.productDescription}>{description}</li>
+                  <li key={Math.random() * 100000000} className={styles.productDescription}>{description}</li>
                 )
               })}
             </ul>
@@ -41,7 +41,7 @@ const CardPrice = props => {
             <ul className={styles.descriptionList}>
               {productDescription.map(description => {
                 return (
-                  <li key={packagePrice} className={styles.productDescription}>{description}</li>
+                  <li key={Math.random() * 100000000} className={styles.productDescription}>{description}</li>
                 )
               })}
             </ul>

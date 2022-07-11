@@ -1,3 +1,13 @@
+
+$marginBottom: 1rem;
+$borderColorGrey: rgba(59, 73, 223, 0.1);
+
+
+$bPurpleBrand: #3b49df;
+$bPurpleBrandDarker: #323ebe;
+$bPurpleBrandLigther: #4150f5;
+
+
 .wrapper{
   display: grid;
   place-items: center;
@@ -9,4 +19,20 @@
 }
 .type{
   padding: 5rem;
+}
+.buyButton {
+  font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all ease 500ms;
+  text-align: center;
+ 
+  padding: 0.5rem;
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  border: 0.12rem solid rgba(59, 73, 223, 0.4);
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.buyButton:hover {
+  color: whitesmoke;
+  background-color: $bPurpleBrandDarker;
 }
